@@ -9,7 +9,7 @@ export default function Home() {
         <NavBar />
         <div className="fixed bottom-0 left-0 text-center w-full">footer</div>
       </div>
-      <div className="flex space-x-4 text-sm items-center">
+      <div className="h-screen w-screen flex items-center justify-center space-x-4 text-sm">
         <Tabs>
           <TabsList>
             <TabsTrigger value="agent">Agent</TabsTrigger>
