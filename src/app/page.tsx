@@ -4,12 +4,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex-col items-center p-24 justify-center">
+    <main className="min-h-screen flex-col items-center justify-center p-24">
       <div className="grid items-center justify-between">
         <NavBar />
-        <div className="fixed bottom-0 left-0 text-center w-full">footer</div>
+        <div className="fixed bottom-0 left-0 w-full text-center">footer</div>
       </div>
-      <div className="h-screen w-screen flex items-center justify-center space-x-4 text-sm">
+      <div className="flex h-screen w-screen items-center justify-center space-x-4 text-sm">
         <Tabs>
           <TabsList>
             <TabsTrigger value="agent">Agent</TabsTrigger>
