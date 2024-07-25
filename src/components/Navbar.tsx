@@ -15,7 +15,7 @@ export default function NavBar({ className }: { className?: string }) {
   return (
     <nav
       className={cn(
-        "flex w-full border-b bg-gradient-to-b px-6 py-4 text-center backdrop-blur-md dark:border-b-zinc-800 dark:bg-zinc-800/50 dark:from-zinc-900/50",
+        "flex w-full border-b border-b-border px-6 py-4 text-center backdrop-blur-md",
         className
       )}
     >
