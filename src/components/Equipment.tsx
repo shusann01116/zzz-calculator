@@ -14,8 +14,8 @@ export default function Equipment({ className }: { className?: string }) {
           <h2 className="text-sm font-bold">
             &gt; ウッドペッカー・エレクトロ 4/4
           </h2>
-          <p className="ml-4 text-[8pt]">
-            『通常攻撃』、『回避反撃』または『強化特殊スキル』が敵に命中し、なおかつ会心が出た時、それぞれ装備者にバフ
+          <p className="ml-4 mt-2 text-[8pt] font-light">
+            『通常攻撃』、『回避反撃』または『強化特殊スキル』が敵に命中し、なおかつ会心が出た時、それぞれ装備者にバフ効果を1重与える。
           </p>
         </div>
       </div>
