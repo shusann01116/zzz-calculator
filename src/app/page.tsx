@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className="items-left rounded-t-lg bg-violet-100 px-8 py-4 text-xl text-white">
         <div className="hidden-scrollbar flex overflow-x-auto">
-          <div className="mb-2 ml-2 w-20 flex-none -skew-x-12 border-2 border-zinc-700 bg-violet-100">
+          <div className="mb-2 ml-2 w-20 rounded-sm flex-none -skew-x-12 border-2 border-zinc-700 bg-violet-100">
             <Image
               src="/assets/img/icon/charactor/elen.png"
               width={500}
@@ -24,7 +24,7 @@ export default function Home() {
               className="skew-x-12 rounded-t-lg"
             />
           </div>
-          <div className="mb-2 ml-2 w-20 flex-none -skew-x-12 border-2 border-zinc-700 bg-violet-100">
+          <div className="mb-2 ml-2 w-20 rounded-sm -skew-x-12 border-2 border-zinc-700 bg-violet-100">
             <Image
               src="/assets/img/icon/charactor/elen.png"
               width={500}

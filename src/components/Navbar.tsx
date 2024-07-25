@@ -12,7 +12,7 @@ const links: {
 
 export default function NavBar() {
   return (
-    <div className="fixed left-0 top-0 flex w-full border-b bg-gradient-to-b px-6 py-4 text-center">
+    <div className="fixed left-0 top-0 flex w-full border-b bg-gradient-to-b px-6 py-4 text-center z-40">
       <Link href={"/"} className="pointer-events-none text-white">
         ZZZ Calculator
       </Link>
