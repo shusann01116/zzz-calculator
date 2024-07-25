@@ -39,7 +39,7 @@ export default function Home() {
               width={500}
               height={500}
               alt="Picture of the elen"
-              className="test border-2 rounded-t-lg bg-violet-100"
+              className="logo-animation border-2 rounded-t-lg bg-violet-100"
             />
           </div>
 
