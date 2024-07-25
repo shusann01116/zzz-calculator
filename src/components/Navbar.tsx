@@ -12,20 +12,12 @@ const links: {
 
 export default function NavBar() {
   return (
-    <div className="fixed left-0 top-0 flex w-full border-b bg-gradient-to-b px-6 py-4 text-center">
-      <Link href={"/"} className="pointer-events-none">
-        ZZZ Calculator
-      </Link>
-      <div className="ml-auto hidden md:block">
-        {links.map((l) => (
-          <Link
-            key={l.url}
-            href={l.url}
-            className="text-sm text-muted-foreground transition-colors hover:text-primary"
-          >
-            {l.name}
-          </Link>
-        ))}
+    <div className="fixed top-0 left-0 text-center w-full py-4 border-b bg-gradient-to-b flex px-6">
+      <Link href={"/"} className="pointer-events-none text-white">ZZZ Calculator</Link>
+      <div className="hidden ml-auto md:block">
+      {links.map(l => (
+        <Link key={l.url} href={l.url} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link>
+      ))}
       </div>
     </div>
   );
