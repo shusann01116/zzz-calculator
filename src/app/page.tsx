@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex-col items-center p-24 justify-center bg-gradient-to-b from-zinc-700 to-neutral-900">
+    <main className="min-h-screen flex-col items-center p-4 md:p-24 bg-gradient-to-b from-zinc-700 to-neutral-900">
       <div className="grid items-center justify-between">
         <NavBar />
         <div className="fixed bottom-0 left-0 w-full text-center">footer</div>
