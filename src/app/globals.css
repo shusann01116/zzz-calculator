@@ -78,3 +78,22 @@
     display: none;
   }
 }
+
+.test {
+  background-image: url("/assets/img/logo/charactor/elen.png");
+  background-repeat: repeat-x;
+  animation-name: test;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes test {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1500px 0;
+  }
+}
