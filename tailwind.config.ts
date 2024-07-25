@@ -74,7 +74,11 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: [
+          "var(--font-sans)",
+          "var(--fonto-noto-sans-jp)",
+          ...fontFamily.sans,
+        ],
       },
     },
   },
