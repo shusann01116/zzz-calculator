@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.0",
@@ -28,6 +29,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
+    "husky": "^9.1.1",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
