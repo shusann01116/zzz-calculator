@@ -1,7 +1,6 @@
 import NavBar from "@/components/Navbar";
 import Agent from "@/components/Agent";
 import Equipment from "@/components/Equipment";
-import Status from "@/components/Status";
 
 export default function Home() {
   return (
@@ -13,10 +12,7 @@ export default function Home() {
       <div className="mx-auto mt-20 max-w-screen-lg rounded-t-lg bg-gradient-to-b from-violet-100 to-background to-90%">
         <Agent className="max-w-screen-lg" />
       </div>
-      <div className="grid max-w-screen-lg grid-cols-3 rounded-t-lg bg-neutral-900">
-        <Equipment className="col-span-2 px-2" />
-        <Status className="col-span-1 mx-1 mt-10" />
-      </div>
+      <Equipment className="col-span-2 mx-4" />
     </main>
   );
 }

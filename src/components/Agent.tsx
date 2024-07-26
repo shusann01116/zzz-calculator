@@ -30,7 +30,7 @@ export default function Agent({ className }: { className?: string }) {
             />
           </div>
         </div>
-        <div className="rounded-lg bg-zinc-700">
+        <div className="rounded-lg bg-neutral-800">
           <div className="p-4">
             <Image
               src="/assets/img/charactor-art/elen.png"
