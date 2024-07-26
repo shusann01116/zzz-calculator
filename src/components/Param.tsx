@@ -18,7 +18,7 @@ export default function Param({
       <span className="text-sm text-muted-foreground">{paramName}</span>
       <div className="grid grid-cols-1">
         <span className="text-xs ml-2">{basicParamValue}</span>
-        <span className="text-plus text-xs">+ {correctionParamValue}</span>
+        <span className="text-positive text-xs">+ {correctionParamValue}</span>
       </div>
 
       <span className="text-sm">{paramValue}</span>

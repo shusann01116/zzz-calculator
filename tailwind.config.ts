@@ -56,7 +56,7 @@ const config = {
         neutral: {
           850: "#1f1f1f",
         },
-        plus: {
+        positive: {
           DEFAULT: "#b5ff00",
         }
       },
