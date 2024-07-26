@@ -36,7 +36,7 @@ export default function GearSet({ className }: { className?: string }) {
         </div>
         <div className="absolute mt-28 h-64 w-64 rotate-[45deg] rounded-full">
           <p className="h-24 w-24 -rotate-[45deg] rounded-full bg-black text-center">
-            wepon
+            weapon
           </p>
         </div>
       </div>
