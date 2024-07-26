@@ -9,8 +9,8 @@ export default function Home() {
         <NavBar className="fixed left-0 top-0 z-10" />
         <div className="fixed bottom-0 left-0 h-14 w-full bg-gradient-to-t from-background/50 to-background/0 backdrop-blur-lg" />
       </div>
-      <div className="mt-20 max-w-screen-lg">
-        <Agent className="m-auto max-w-screen-lg" />
+      <div className="mx-auto mt-20 max-w-screen-lg">
+        <Agent className="max-w-screen-lg" />
         <Equipment className="mx-4" />
       </div>
     </main>
