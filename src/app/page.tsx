@@ -14,7 +14,7 @@ export default function Home() {
         <Agent className="max-w-screen-lg" />
       </div>
       <div className="grid max-w-screen-lg grid-cols-3 rounded-t-lg bg-neutral-900">
-        <Equipment className="col-span-2" />
+        <Equipment className="col-span-2 px-2" />
         <Status className="col-span-1 mx-1 mt-10" />
       </div>
     </main>
