@@ -54,8 +54,11 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         neutral: {
-          850: '#1f1f1f',
+          850: "#1f1f1f",
         },
+        plus: {
+          DEFAULT: "#b5ff00",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -82,6 +85,9 @@ const config = {
           "var(--fonto-noto-sans-jp)",
           ...fontFamily.sans,
         ],
+      },
+      fontSize: {
+        xs: ["10px", "14px"],
       },
     },
   },
