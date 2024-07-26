@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className="grid max-w-screen-lg grid-cols-3 rounded-t-lg bg-neutral-900">
         <Equipment className="col-span-2" />
-        <Status className="col-span-1 mt-10 mx-1" />
+        <Status className="col-span-1 mx-1 mt-10" />
       </div>
     </main>
   );
