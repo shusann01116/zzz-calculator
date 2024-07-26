@@ -58,7 +58,7 @@ const config = {
         },
         positive: {
           DEFAULT: "#b5ff00",
-        }
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

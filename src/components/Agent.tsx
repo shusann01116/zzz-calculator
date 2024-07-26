@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import GearSet from "@/components/GearSet";
 
 export default function Agent({ className }: { className?: string }) {
   return (
@@ -31,14 +32,16 @@ export default function Agent({ className }: { className?: string }) {
           </div>
         </div>
         <div className="rounded-lg bg-neutral-800">
-          <div className="p-4">
+          <div className="grid grid-cols-5 p-4">
             <Image
               src="/assets/img/charactor-art/elen.png"
               width={500}
               height={500}
               alt="Picture of the elen"
-              className="logo-animation rounded-t-sm bg-violet-100"
+              className="logo-animation col-span-3 rounded-t-sm bg-violet-100"
             />
+            {/* HA-RI-BO-TE */}
+            {/* <GearSet className="col-span-2"/> */}
           </div>
         </div>
       </div>

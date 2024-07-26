@@ -11,9 +11,8 @@ export default function Home() {
       </div>
       <div className="mx-auto mt-20 max-w-screen-lg">
         <Agent className="max-w-screen-lg" />
-        <Equipment className="col-span-2 mx-4" />
+        <Equipment className="mx-4" />
       </div>
-
     </main>
   );
 }
