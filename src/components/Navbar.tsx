@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const links: {
@@ -10,10 +11,15 @@ const links: {
   },
 ];
 
-export default function NavBar() {
+export default function NavBar({ className }: { className?: string }) {
   return (
-    <div className="fixed left-0 top-0 flex w-full border-b bg-gradient-to-b px-6 py-4 text-center">
-      <Link href={"/"} className="pointer-events-none">
+    <nav
+      className={cn(
+        "flex w-full border-b border-b-border px-6 py-4 text-center backdrop-blur-md",
+        className
+      )}
+    >
+      <Link href={"/"} className="pointer-events-none text-foreground">
         ZZZ Calculator
       </Link>
       <div className="ml-auto hidden md:block">
@@ -21,12 +27,12 @@ export default function NavBar() {
           <Link
             key={l.url}
             href={l.url}
-            className="text-sm text-muted-foreground transition-colors hover:text-primary"
+            className="text-sm text-foreground transition-colors hover:text-primary"
           >
             {l.name}
           </Link>
         ))}
       </div>
-    </div>
+    </nav>
   );
 }

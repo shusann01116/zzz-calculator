@@ -53,6 +53,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        neutral: {
+          850: "#1f1f1f",
+        },
+        positive: {
+          DEFAULT: "#b5ff00",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,7 +80,14 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: [
+          "var(--font-sans)",
+          "var(--fonto-noto-sans-jp)",
+          ...fontFamily.sans,
+        ],
+      },
+      fontSize: {
+        xs: ["10px", "14px"],
       },
     },
   },
