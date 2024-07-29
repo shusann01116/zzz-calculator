@@ -1,0 +1,774 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "retcode": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "desc": {
+              "type": "string",
+              "minLength": 1
+            },
+            "icon_url": {
+              "type": "string",
+              "minLength": 1
+            },
+            "header_img_url": {
+              "type": "string",
+              "minLength": 1
+            },
+            "modules": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": [
+                  "name",
+                  "is_poped",
+                  "id",
+                  "is_customize_name",
+                  "is_abstract",
+                  "is_show_switch",
+                  "switch",
+                  "desc",
+                  "repeated",
+                  "is_submodule",
+                  "origin_module_id",
+                  "without_border",
+                  "can_delete",
+                  "is_hidden"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "is_poped": {
+                    "type": "boolean"
+                  },
+                  "components": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "items": {
+                      "required": ["component_id", "layout", "data", "style"],
+                      "properties": {
+                        "component_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "layout": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "style": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "is_customize_name": {
+                    "type": "boolean"
+                  },
+                  "is_abstract": {
+                    "type": "boolean"
+                  },
+                  "is_show_switch": {
+                    "type": "boolean"
+                  },
+                  "switch": {
+                    "type": "boolean"
+                  },
+                  "desc": {
+                    "type": "string"
+                  },
+                  "repeated": {
+                    "type": "boolean"
+                  },
+                  "is_submodule": {
+                    "type": "boolean"
+                  },
+                  "origin_module_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "without_border": {
+                    "type": "boolean"
+                  },
+                  "can_delete": {
+                    "type": "boolean"
+                  },
+                  "is_hidden": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "filter_values": {
+              "type": "object",
+              "properties": {
+                "agent_faction": {
+                  "type": "object",
+                  "properties": {
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    },
+                    "value_types": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "value",
+                          "mi18n_key",
+                          "icon",
+                          "enum_string"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "value": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "mi18n_key": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "icon": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "enum_string": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "key": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "text": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "values": {
+                          "type": "array",
+                          "items": {
+                            "required": [],
+                            "properties": {}
+                          }
+                        },
+                        "mi18n_key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_multi_select": {
+                          "type": "boolean"
+                        },
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_hidden": {
+                          "type": "boolean"
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "text",
+                        "values",
+                        "mi18n_key",
+                        "is_multi_select",
+                        "id",
+                        "is_hidden",
+                        "updated_at"
+                      ]
+                    }
+                  },
+                  "required": ["values", "value_types", "key"]
+                },
+                "agent_rarity": {
+                  "type": "object",
+                  "properties": {
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    },
+                    "value_types": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "value",
+                          "mi18n_key",
+                          "icon",
+                          "enum_string"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "value": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "mi18n_key": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "icon": {
+                            "type": "string"
+                          },
+                          "enum_string": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "key": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "text": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "values": {
+                          "type": "array",
+                          "items": {
+                            "required": [],
+                            "properties": {}
+                          }
+                        },
+                        "mi18n_key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_multi_select": {
+                          "type": "boolean"
+                        },
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_hidden": {
+                          "type": "boolean"
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "text",
+                        "values",
+                        "mi18n_key",
+                        "is_multi_select",
+                        "id",
+                        "is_hidden",
+                        "updated_at"
+                      ]
+                    }
+                  },
+                  "required": ["values", "value_types", "key"]
+                },
+                "agent_specialties": {
+                  "type": "object",
+                  "properties": {
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    },
+                    "value_types": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "value",
+                          "mi18n_key",
+                          "icon",
+                          "enum_string"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "value": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "mi18n_key": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "icon": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "enum_string": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "key": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "text": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "values": {
+                          "type": "array",
+                          "items": {
+                            "required": [],
+                            "properties": {}
+                          }
+                        },
+                        "mi18n_key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_multi_select": {
+                          "type": "boolean"
+                        },
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_hidden": {
+                          "type": "boolean"
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "text",
+                        "values",
+                        "mi18n_key",
+                        "is_multi_select",
+                        "id",
+                        "is_hidden",
+                        "updated_at"
+                      ]
+                    }
+                  },
+                  "required": ["values", "value_types", "key"]
+                },
+                "agent_stats": {
+                  "type": "object",
+                  "properties": {
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    },
+                    "value_types": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "value",
+                          "mi18n_key",
+                          "icon",
+                          "enum_string"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "value": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "mi18n_key": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "icon": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "enum_string": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "key": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "text": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "values": {
+                          "type": "array",
+                          "items": {
+                            "required": [],
+                            "properties": {}
+                          }
+                        },
+                        "mi18n_key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_multi_select": {
+                          "type": "boolean"
+                        },
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_hidden": {
+                          "type": "boolean"
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "text",
+                        "values",
+                        "mi18n_key",
+                        "is_multi_select",
+                        "id",
+                        "is_hidden",
+                        "updated_at"
+                      ]
+                    }
+                  },
+                  "required": ["values", "value_types", "key"]
+                },
+                "agent_attack_type": {
+                  "type": "object",
+                  "properties": {
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    },
+                    "value_types": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "value",
+                          "mi18n_key",
+                          "icon",
+                          "enum_string"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "value": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "mi18n_key": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "icon": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "enum_string": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "key": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "text": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "values": {
+                          "type": "array",
+                          "items": {
+                            "required": [],
+                            "properties": {}
+                          }
+                        },
+                        "mi18n_key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_multi_select": {
+                          "type": "boolean"
+                        },
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "is_hidden": {
+                          "type": "boolean"
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "text",
+                        "values",
+                        "mi18n_key",
+                        "is_multi_select",
+                        "id",
+                        "is_hidden",
+                        "updated_at"
+                      ]
+                    }
+                  },
+                  "required": ["values", "value_types", "key"]
+                }
+              },
+              "required": [
+                "agent_faction",
+                "agent_rarity",
+                "agent_specialties",
+                "agent_stats",
+                "agent_attack_type"
+              ]
+            },
+            "menu_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "menu_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "langs": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            },
+            "template_layout": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "edit_lock_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "correct_lock_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "menus": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            },
+            "template_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ext": {
+              "type": "object",
+              "properties": {
+                "fe_ext": {
+                  "type": "string"
+                },
+                "post_ext": {
+                  "type": "object",
+                  "properties": {
+                    "post_id": {
+                      "type": "string"
+                    },
+                    "post_user_name": {
+                      "type": "string"
+                    },
+                    "post_time": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "post_avatar_url": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "post_id",
+                    "post_user_name",
+                    "post_time",
+                    "post_avatar_url",
+                    "url"
+                  ]
+                },
+                "server_ext": {
+                  "type": "string"
+                },
+                "personalized_color": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "scrolling_text": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "fe_ext",
+                "post_ext",
+                "server_ext",
+                "personalized_color",
+                "scrolling_text"
+              ]
+            },
+            "alias_name": {
+              "type": "string"
+            },
+            "lang": {
+              "type": "string"
+            },
+            "beta": {
+              "type": "boolean"
+            },
+            "page_type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "menu_style": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "desc",
+            "icon_url",
+            "header_img_url",
+            "modules",
+            "filter_values",
+            "menu_id",
+            "menu_name",
+            "version",
+            "langs",
+            "template_layout",
+            "edit_lock_status",
+            "correct_lock_status",
+            "menus",
+            "template_id",
+            "ext",
+            "alias_name",
+            "lang",
+            "beta",
+            "page_type",
+            "menu_style"
+          ]
+        }
+      },
+      "required": ["page"]
+    }
+  },
+  "required": ["retcode", "message", "data"]
+}
