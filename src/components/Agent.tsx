@@ -40,7 +40,7 @@ export default function Agent({ className }: { className?: string }) {
               alt="Picture of the elen"
               className="logo-animation col-span-3 rounded-t-sm bg-violet-100"
             />
-            <GearSet className="col-span-2"/>
+            <GearSet className="col-span-2" />
           </div>
         </div>
       </div>
