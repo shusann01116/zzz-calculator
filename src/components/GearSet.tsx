@@ -7,32 +7,32 @@ export default function GearSet({ className }: { className?: string }) {
       <div className="bg-cover h-72 w-80 bg-[url('/assets/img/bg/gear-set/image.png')]">
         <div className="ml-10">
           <div className="absolute h-64 w-64 rotate-[10deg] rounded-full">
-            <p className="mt-6 ml-2 h-20 w-20 -rotate-[10deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/image.png')] text-center">
+            <p className="mt-6 ml-2 h-20 w-20 -rotate-[10deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/sp_right.png')] text-center">
               1
             </p>
           </div>
           <div className="absolute h-64 w-64 rotate-[315deg] rounded-full">
-            <p className="mt-5 h-20 w-20 -rotate-[315deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/image.png')] text-center">
+            <p className="mt-5 h-20 w-20 -rotate-[315deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/sp_right.png')] text-center">
               2
             </p>
           </div>
           <div className="absolute h-64 w-64 rotate-[260deg] rounded-full">
-            <p className="h-20 w-20 -rotate-[260deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/image.png')] text-center">
+            <p className="h-20 w-20 -rotate-[260deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/sp_right.png')] text-center">
               3
             </p>
           </div>
           <div className="absolute h-64 w-64 rotate-[195deg] rounded-full">
-            <p className="h-20 w-20 -rotate-[195deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/image.png')] text-center">
+            <p className="h-20 w-20 -rotate-[195deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/sp_right.png')] text-center">
               4
             </p>
           </div>
           <div className="absolute h-64 w-64 rotate-[140deg] rounded-full">
-            <p className="h-20 w-20 -rotate-[140deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/image.png')] text-center">
+            <p className="h-20 w-20 -rotate-[140deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/sp_right.png')] text-center">
               5
             </p>
           </div>
           <div className="absolute h-64 w-64 rotate-[85deg] rounded-full">
-            <p className="h-20 w-20 -rotate-[85deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/image.png')] text-center">
+            <p className="h-20 w-20 -rotate-[85deg] rounded-full bg-cover bg-[url('/assets/img/bg/disc/sp_right.png')] text-center">
               6
             </p>
           </div>
